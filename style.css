@@ -1,0 +1,432 @@
+/* ===========================
+   GOOGLE FONTS
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ===========================
+   VARIABLES — LIGHT MODE
+   =========================== */
+:root {
+  --bg:          #fafaf8;
+  --surface:     #f4f1ec;
+  --text:        #1c1c1c;
+  --text-muted:  #7a7a7a;
+  --border:      #e0dbd2;
+  --accent:      #2c5282;
+  --accent-hover:#1a3a63;
+  --hover-bg:    #eeebe4;
+  --font:        'Inter', system-ui, sans-serif;
+  --font-mono:   'Courier New', Courier, monospace;
+  --max:         640px;
+  --pad:         2rem;
+  --radius:      6px;
+}
+
+/* ===========================
+   DARK MODE
+   =========================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:          #141414;
+    --surface:     #1e1e1e;
+    --text:        #e8e6e1;
+    --text-muted:  #888888;
+    --border:      #2e2e2e;
+    --accent:      #7aa2d4;
+    --accent-hover:#9dbce8;
+    --hover-bg:    #1e1e1e;
+  }
+}
+
+/* ===========================
+   RESET
+   =========================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.75;
+  padding: 0 var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ===========================
+   LINKS
+   =========================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+.site-header {
+  padding: 2.2rem 0 1.8rem;
+}
+
+.site-id {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ===========================
+   MAIN
+   =========================== */
+.main {
+  padding-bottom: 4rem;
+}
+
+/* ===========================
+   HERO BLOCK
+   =========================== */
+.hero-block {
+  padding: 2rem 0 2.2rem;
+}
+
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.hero-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 8%;
+  display: block;
+  filter: grayscale(10%);
+  border: 2px solid var(--border);
+}
+
+.hero-name {
+  font-family: var(--font);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-role {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.hero-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.hero-meta a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.hero-meta a:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* CV page hero — no photo */
+.cv-hero {
+  padding-top: 1.5rem;
+}
+
+/* ===========================
+   DIVIDER
+   =========================== */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ===========================
+   BLOCKS
+   =========================== */
+.block {
+  padding: 1.8rem 0;
+}
+
+.block-label {
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.block-body p {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+}
+
+.block-body p:last-child {
+  margin-bottom: 0;
+}
+
+.block-body strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ===========================
+   FIND LIST
+   =========================== */
+.find-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.find-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
+}
+
+.find-item:last-child {
+  border-bottom: none;
+}
+
+.find-item:hover {
+  background: var(--hover-bg);
+  text-decoration: none;
+}
+
+.find-title {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 76px;
+  color: var(--text);
+}
+
+.find-desc {
+  font-family: var(--font);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.find-arrow {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.find-item:hover .find-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* ===========================
+   CV — EXPERIENCE
+   =========================== */
+.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cv-item {
+  padding-bottom: 0;
+}
+
+.cv-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-date {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.cv-current {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.cv-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+  letter-spacing: -0.01em;
+}
+
+.cv-company {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+
+.cv-points {
+  list-style: none;
+  padding: 0;
+}
+
+.cv-points li {
+  font-size: 0.88rem;
+  color: var(--text);
+  padding-left: 1.1rem;
+  position: relative;
+  margin-bottom: 0.35rem;
+  line-height: 1.65;
+}
+
+.cv-points li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* ===========================
+   CV — SKILLS
+   =========================== */
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.skill-row {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.skill-cat {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  min-width: 110px;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.skill-vals {
+  color: var(--text);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer span,
+.site-footer a {
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ===========================
+   MOBILE
+   =========================== */
+@media (max-width: 520px) {
+  :root {
+    --pad: 1.25rem;
+  }
+
+  .hero-photo {
+    width: 84px;
+    height: 84px;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .skill-cat {
+    min-width: unset;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
