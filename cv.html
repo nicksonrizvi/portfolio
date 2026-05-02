@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  if (localStorage.getItem('theme') === 'dark')
+    document.documentElement.setAttribute('data-theme', 'dark');
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV &mdash; Najmaz Sakib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cv-layout">
+
+  <!-- ========================
+       TOP BAR
+       ======================== -->
+  <header class="top-bar">
+    <a href="index.html" class="site-id back-link">&larr; NAJMAZ.SAKIB</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="icon icon-moon">🌙</span>
+      <span class="icon icon-sun">☀️</span>
+      <span class="label" id="themeLabel">Dark</span>
+    </button>
+  </header>
+
+  <!-- ========================
+       SIDEBAR
+       ======================== -->
+  <aside class="sidebar">
+
+    <div>
+      <img src="photo.jpg" alt="Najmaz Sakib" class="sidebar-photo" />
+      <div class="sidebar-name">Najmaz Sakib</div>
+      <div class="sidebar-role">Sr. Engineer<br/>Service Assurance</div>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Contact</span>
+      <span class="sb-val">
+        <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>
+      </span>
+      <span class="sb-muted">+880 1833-020438</span>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">LinkedIn</span>
+      <span class="sb-val">
+        <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">najmaz-sakib</a>
+      </span>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Location</span>
+      <span class="sb-val">Dhaka, Bangladesh</span>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Education</span>
+      <span class="sb-val">B.Sc. CSE</span>
+      <span class="sb-muted">DIU, 2023</span>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Skills</span>
+      <div class="tag-wrap">
+        <span class="tag">ELK Stack</span>
+        <span class="tag">Grafana</span>
+        <span class="tag">Nagios</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Nginx</span>
+        <span class="tag">Bash</span>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">DNS</span>
+        <span class="tag">A2P SMS</span>
+        <span class="tag">Sphinx</span>
+        <span class="tag">GitHub</span>
+      </div>
+    </div>
+
+    <div class="sb-footer">
+      &copy; 2026 Najmaz Sakib
+    </div>
+
+  </aside>
+
+  <!-- ========================
+       CV MAIN
+       ======================== -->
+  <main class="cv-main">
+
+    <!-- EXPERIENCE -->
+    <div class="cv-section">
+      <span class="cv-section-label">Experience</span>
+      <div class="cv-list">
+
+        <div>
+          <div class="cv-item-meta">
+            <span class="cv-date">Oct 2024 &ndash; Present</span>
+            <span class="cv-badge">Current</span>
+          </div>
+          <h3 class="cv-job-title">Senior Engineer &ndash; Service Assurance</h3>
+          <p class="cv-company">Infozillion Teletech BD Ltd</p>
+          <ul class="cv-points">
+            <li>Own L1/L2 incident management in a 24/7 production environment — from first alert to root cause, with structured escalation that keeps noise low and resolution fast.</li>
+            <li>Monitor system, application, and network health across the stack using ELK Stack, Grafana, and Nagios; built custom dashboards that surfaced failure patterns previously invisible to the team.</li>
+            <li>Lead investigation of A2P SMS delivery failures — correlating application logs, network traces, and telecom operator data to isolate root cause under time pressure.</li>
+            <li>Reduced mean incident response time by standardising log triage workflows; what took 40 minutes now takes under 15.</li>
+            <li>Authored and maintains the team's internal runbook library — structured so that a new engineer can handle critical incidents without tribal knowledge.</li>
+            <li>Coordinate directly with telecom operators during outages, translating technical findings into clear, actionable communication across teams.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="cv-item-meta">
+            <span class="cv-date">Jan 2023 &ndash; Feb 2024</span>
+          </div>
+          <h3 class="cv-job-title">Project Delivery Assistant</h3>
+          <p class="cv-company">Quantigo AI</p>
+          <ul class="cv-points">
+            <li>Managed quality assurance across concurrent annotation projects for AI/ML training pipelines — maintaining accuracy standards that directly affected model performance downstream.</li>
+            <li>Identified systematic labelling inconsistencies and redesigned the validation workflow, reducing rework cycles across the team.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="cv-item-meta">
+            <span class="cv-date">Oct 2022 &ndash; Dec 2022</span>
+          </div>
+          <h3 class="cv-job-title">Data Analyst</h3>
+          <p class="cv-company">Intelligent Image Management Ltd</p>
+          <ul class="cv-points">
+            <li>Processed and validated structured datasets to support operational reporting.</li>
+            <li>Identified data inconsistencies to improve downstream system reliability.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="cv-item-meta">
+            <span class="cv-date">Aug 2021 &ndash; Sep 2022</span>
+          </div>
+          <h3 class="cv-job-title">Research Associate</h3>
+          <p class="cv-company">Bangladesh Institute of Management</p>
+          <ul class="cv-points">
+            <li>Assisted with research activities, data collection, and project documentation.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="cv-section">
+      <span class="cv-section-label">Skills</span>
+      <div class="skill-rows">
+        <div class="skill-row">
+          <span class="skill-cat">Monitoring &amp; Support</span>
+          <span class="skill-vals">ELK Stack &middot; Grafana &middot; Nagios &middot; SLA Helpdesk &middot; Incident Management</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Infrastructure</span>
+          <span class="skill-vals">Linux (Ubuntu) &middot; Bash &middot; Nginx &middot; SSH &middot; TCP/IP &middot; DNS &middot; A2P SMS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Documentation</span>
+          <span class="skill-vals">Sphinx &middot; GitHub &middot; ReadTheDocs &middot; Technical Writing</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Languages</span>
+          <span class="skill-vals">Bengali (Native) &middot; English (Full Working Proficiency)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="cv-section">
+      <span class="cv-section-label">Projects</span>
+      <div class="cv-list">
+        <div>
+          <h3 class="cv-job-title">Sphinx-based Internal Documentation System</h3>
+          <ul class="cv-points">
+            <li>Designed and deployed an internal documentation platform using Sphinx for structured, searchable knowledge management.</li>
+            <li>Integrated GitHub and ReadTheDocs for version-controlled, centrally accessible team documentation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="cv-section">
+      <span class="cv-section-label">Education</span>
+      <div class="cv-list">
+        <div>
+          <div class="cv-item-meta">
+            <span class="cv-date">Graduated 2023</span>
+          </div>
+          <h3 class="cv-job-title">B.Sc. in Computer Science &amp; Engineering</h3>
+          <p class="cv-company">Daffodil International University (DIU), Bangladesh</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="cv-section">
+      <span class="cv-section-label">Certifications</span>
+      <div class="skill-rows">
+        <div class="skill-row">
+          <span class="skill-cat">2023</span>
+          <span class="skill-vals">Mapping Project Training</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">2018</span>
+          <span class="skill-vals">Java Workshop</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">2017</span>
+          <span class="skill-vals">C Programming Workshop</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTRA -->
+    <div class="cv-section">
+      <span class="cv-section-label">Extra</span>
+      <div class="extra-body">
+        <p>Member &mdash; DIU Computer Club.</p>
+        <p>BNCC Cadet (2018) &mdash; Leadership &amp; discipline training.</p>
+        <p>Volunteer &mdash; University tech fest event management.</p>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+  const root   = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const label  = document.getElementById('themeLabel');
+
+  if (localStorage.getItem('theme') === 'dark') label.textContent = 'Light';
+
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      root.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      label.textContent = 'Dark';
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      label.textContent = 'Light';
+    }
+  });
+</script>
+
+</body>
+</html>
