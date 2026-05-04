@@ -367,23 +367,12 @@ a:hover {
   padding: 0 0 2.5rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 2.5rem;
-/* FADE-IN on scroll — premium */
+/* BLOCKS */
 .block {
   padding: 0 0 2.5rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 2.5rem;
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 0.25s;
-  will-change: opacity, transform;
-}
-
-.block.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  transition: border-color 0.25s;
 }
 
 .block:last-child {

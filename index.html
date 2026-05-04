@@ -200,33 +200,7 @@
     });
 
     /* ================================
-       2. SCROLL FADE-IN — premium
-    ================================ */
-    const blocks = document.querySelectorAll('.block');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, {
-      threshold: 0,
-      rootMargin: '0px'
-    });
-
-    // first block appears immediately on load
-    blocks.forEach((b, i) => {
-      if (i === 0) {
-        setTimeout(() => b.classList.add('is-visible'), 100);
-      } else {
-        observer.observe(b);
-      }
-    });
-
-    /* ================================
-       4. COPY EMAIL BUTTON
+       3. COPY EMAIL BUTTON
     ================================ */
     const copyBtn = document.getElementById('copyBtn');
     if (copyBtn) {
