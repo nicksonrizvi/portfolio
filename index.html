@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  if (localStorage.getItem('theme') === 'dark')
+    document.documentElement.setAttribute('data-theme', 'dark');
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Najmaz Sakib — Senior Engineer, Service Assurance. Dhaka, Bangladesh." />
+  <meta property="og:title" content="Najmaz Sakib" />
+  <meta property="og:description" content="Senior Engineer, Service Assurance · Singer-songwriter · Writer. Dhaka, Bangladesh." />
+  <title>Najmaz Sakib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+      <span class="site-id">NAJMAZ.SAKIB</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon icon-moon">🌙</span>
+        <span class="icon icon-sun">☀️</span>
+        <span class="label" id="themeLabel">Dark</span>
+      </button>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div>
+        <img src="photo.jpg" alt="Najmaz Sakib" class="sidebar-photo" />
+        <div class="sidebar-name">Najmaz Sakib</div>
+        <div class="sidebar-role">Senior Engineer, Service Assurance</div>
+      </div>
+
+      <div class="sb-section">
+        <span class="sb-label">Location</span>
+        <span class="sb-val">Dhaka, Bangladesh</span>
+      </div>
+
+      <div class="sb-section">
+        <span class="sb-label">Currently</span>
+        <span class="sb-val">Infozillion Teletech BD Ltd</span>
+        <span class="sb-muted">Oct 2024 &ndash; Present</span>
+      </div>
+
+      <div class="sb-section">
+        <span class="sb-label">Contact</span>
+        <div class="copy-wrap">
+          <a href="mailto:najmaz.sakib@gmail.com" class="sb-val">najmaz.sakib@gmail.com</a>
+          <button class="copy-btn" id="copyBtn" aria-label="Copy email">copy</button>
+        </div>
+        <span class="sb-muted">+880 1833-020438</span>
+      </div>
+
+      <div class="sb-section">
+        <span class="sb-label">Skills</span>
+        <div class="tag-wrap">
+          <span class="tag">ELK Stack</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">Nagios</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Nginx</span>
+          <span class="tag">Bash</span>
+          <span class="tag">TCP/IP</span>
+          <span class="tag">A2P SMS</span>
+          <span class="tag">Sphinx</span>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <span class="sb-label">Find me</span>
+        <nav class="sb-nav">
+          <a href="cv.html" class="sb-nav-link">
+            <span class="sb-nav-title">CV</span>
+            <span class="sb-arrow">&#x2197;</span>
+          </a>
+          <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener" class="sb-nav-link">
+            <span class="sb-nav-title">LinkedIn</span>
+            <span class="sb-arrow">&#x2197;</span>
+          </a>
+          <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="sb-nav-link">
+            <span class="sb-nav-title">Music</span>
+            <span class="sb-arrow">&#x2197;</span>
+          </a>
+          <a href="https://medium.com/@najmaz.sakib" target="_blank" rel="noopener" class="sb-nav-link">
+            <span class="sb-nav-title">Writing</span>
+            <span class="sb-arrow">&#x2197;</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sb-footer">
+        <div>&copy; 2026 Najmaz Sakib</div>
+        <div class="sb-updated">
+          <span class="sb-updated-dot"></span>
+          <span>Last updated May 2026</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="mainContent">
+
+      <div class="block" id="about">
+        <span class="block-label">About</span>
+        <div class="block-body">
+          <p>I work in the space where things break at 3&nbsp;AM — service assurance, production systems, the kind of infrastructure that quietly keeps everything else running. My job is to notice what's wrong before anyone else does, understand why it happened, and make sure it doesn't happen the same way twice.</p>
+          <p>There's a particular kind of thinking that comes from staring at logs long enough — you start to see patterns in noise, causality in chaos. I've found that skill useful far beyond engineering.</p>
+          <p>Outside the terminal, I write songs. Not as a hobby — as a practice. Music and systems work share more than people expect: both require patience, precision, and an ear for what doesn't fit.</p>
+          <p>I also write essays, occasionally. About people, about how we learn things we never knew we learned, about the small behaviours that reveal larger truths.</p>
+        </div>
+      </div>
+
+      <div class="block" id="now">
+        <span class="block-label">Now</span>
+        <div class="block-body">
+          <p>Senior Engineer at <strong>Infozillion Teletech BD Ltd</strong>, working in Service Assurance for A2P SMS infrastructure. That means: monitoring, incident response, log analysis, coordination with telecom operators, and the quiet unglamorous work of keeping SLAs intact across a 24/7 production environment.</p>
+          <p>I'm also investing time in documentation — building internal runbooks and knowledge systems that outlast any single person on the team. I think of good documentation as institutional memory. Most teams treat it as an afterthought. I don't.</p>
+        </div>
+      </div>
+
+      <div class="block" id="music">
+        <span class="block-label">Music</span>
+        <div class="block-body">
+          <p>I write and record original songs under the name <strong>Nickson Rizvi</strong>. The work is honest — small observations stretched into melody, personal enough to mean something, open enough for others to find themselves in it.</p>
+          <p>I'm drawn to the gap between what people say and what they feel. Most of my songs live in that space.</p>
+          <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="music-link">
+            Listen on YouTube &#x2197;
+          </a>
+        </div>
+      </div>
+
+      <div class="block" id="writing">
+        <span class="block-label">Writing</span>
+        <div class="block-body">
+          <p>I write when something refuses to leave my head. Usually about people — the patterns we inherit without noticing, the social contracts we follow without signing, the gap between how things are and how they're supposed to be.</p>
+          <p>No agenda. Just thinking out loud, in public, with some care taken over the sentences.</p>
+        </div>
+        <div class="article-list" style="margin-top:0.85rem;">
+          <a href="https://medium.com/@najmaz.sakib/no-matter-what-you-do-its-never-enough-here-s-why-8a58c1f15477"
+             target="_blank" rel="noopener" class="article-item">
+            <div class="art-left">
+              <span class="art-title">No Matter What You Do, It's Never Enough</span>
+              <span class="art-desc">On the psychology of perpetual dissatisfaction &middot; Medium</span>
+            </div>
+            <span class="art-arrow">&#x2197;</span>
+          </a>
+          <a href="https://medium.com/@najmaz.sakib/basic-courtesies-that-people-learn-from-family-7678142e38cf"
+             target="_blank" rel="noopener" class="article-item">
+            <div class="art-left">
+              <span class="art-title">Basic Courtesies That People Learn From Family</span>
+              <span class="art-desc">On what's quietly passed down and quietly missed &middot; Medium</span>
+            </div>
+            <span class="art-arrow">&#x2197;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="block" id="contact">
+        <span class="block-label">Contact</span>
+        <div class="block-body">
+          <p>I'm reachable at <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>. I read everything, though I may take a day or two to respond thoughtfully.</p>
+          <p>If you'd prefer a more professional context, <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">LinkedIn</a> works too.</p>
+        </div>
+      </div>
+
+    </main>
+
+  </div><!-- /.layout -->
+
+  <script>
+  (() => {
+    /* ================================
+       1. THEME TOGGLE
+    ================================ */
+    const root   = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const label  = document.getElementById('themeLabel');
+
+    if (localStorage.getItem('theme') === 'dark') label.textContent = 'Light';
+
+    toggle.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        root.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        label.textContent = 'Dark';
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        label.textContent = 'Light';
+      }
+    });
+
+    /* ================================
+       2. SCROLL FADE-IN — premium
+    ================================ */
+    const blocks = document.querySelectorAll('.block');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          // slight delay per block for cascade feel
+          const idx = Array.from(blocks).indexOf(e.target);
+          setTimeout(() => {
+            e.target.classList.add('is-visible');
+          }, idx === 0 ? 0 : 60);
+          observer.unobserve(e.target);
+        }
+      });
+    }, {
+      threshold: 0.06,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    blocks.forEach(b => observer.observe(b));
+
+    /* ================================
+       4. COPY EMAIL BUTTON
+    ================================ */
+    const copyBtn = document.getElementById('copyBtn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText('najmaz.sakib@gmail.com');
+          copyBtn.textContent = '✓';
+          copyBtn.classList.add('copied');
+          setTimeout(() => {
+            copyBtn.textContent = 'copy';
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        } catch {
+          copyBtn.textContent = 'copy';
+        }
+      });
+    }
+
+  })();
+  </script>
+
+</body>
+</html>
