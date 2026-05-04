@@ -80,7 +80,7 @@ a:hover {
    =========================== */
 .layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
   max-width: 1000px;
@@ -88,7 +88,7 @@ a:hover {
   box-shadow: 0 0 0 1px var(--border);
 }
 
-/* top bar */
+/* top bar — spans full width */
 .top-bar {
   grid-column: 1 / -1;
   display: flex;
@@ -131,7 +131,10 @@ a:hover {
   gap: 0.4rem;
   transition: border-color 0.2s, background 0.2s;
 }
-.theme-toggle:hover { background: var(--surface-2); border-color: var(--text-muted); }
+.theme-toggle:hover {
+  background: var(--surface-2);
+  border-color: var(--text-muted);
+}
 .theme-toggle .icon { font-size: 0.78rem; line-height: 1; }
 .theme-toggle .label {
   font-family: var(--font-mono);
@@ -153,20 +156,13 @@ a:hover {
   border-right: 1px solid var(--border);
   padding: 2rem 1.5rem;
   position: sticky;
-  top: 53px;
+  top: 53px; /* height of top-bar */
   height: calc(100vh - 53px);
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   transition: background 0.25s, border-color 0.25s;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE */
-}
-
-.sidebar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
 }
 
 .sidebar-photo {
@@ -195,20 +191,7 @@ a:hover {
   font-size: 0.78rem;
   color: var(--text-muted);
   line-height: 1.5;
-  min-height: 2.4rem;
 }
-
-/* typewriter cursor */
-.tw-cursor {
-  display: inline-block;
-  width: 1.5px;
-  height: 0.85em;
-  background: var(--text-muted);
-  margin-left: 1px;
-  vertical-align: middle;
-  animation: twblink 0.9s step-end infinite;
-}
-@keyframes twblink { 50% { opacity: 0; } }
 
 /* sidebar section */
 .sb-section {
@@ -239,12 +222,16 @@ a:hover {
 }
 
 /* sidebar nav links */
-.sb-nav { display: flex; flex-direction: column; gap: 0; }
+.sb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 
 .sb-nav-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
   font-size: 0.82rem;
   color: var(--text);
   text-decoration: none;
@@ -256,19 +243,7 @@ a:hover {
 .sb-nav-link:hover { color: var(--accent); text-decoration: none; }
 .sb-nav-link:hover .sb-arrow { transform: translate(2px, -2px); }
 
-/* active section dot */
-.sb-active-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: transparent;
-  flex-shrink: 0;
-  transition: background 0.2s;
-}
-.sb-nav-link.is-active .sb-active-dot { background: var(--accent); }
-.sb-nav-link.is-active { color: var(--accent); font-weight: 500; }
-
-.sb-nav-title { flex: 1; }
+.sb-nav-title { font-weight: 500; }
 .sb-arrow {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -276,8 +251,13 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* tags */
-.tag-wrap { display: flex; flex-wrap: wrap; gap: 5px; }
+/* tags in sidebar */
+.tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .tag {
   font-family: var(--font-mono);
   font-size: 0.6rem;
@@ -290,93 +270,39 @@ a:hover {
   transition: background 0.25s, color 0.25s;
 }
 
-/* copy email — one line, email + button together */
-.copy-wrap {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: nowrap;
-}
-
-.copy-wrap a {
-  font-size: 0.8rem;
-  color: var(--text);
-  white-space: nowrap;
-  flex-shrink: 1;
-  min-width: 0;
-}
-
-.copy-btn {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 0.12rem 0.45rem;
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  transition: border-color 0.15s, color 0.15s;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-.copy-btn:hover { border-color: var(--accent); color: var(--accent); }
-.copy-btn.copied { border-color: #28a745; color: #28a745; }
-
 /* sidebar footer */
 .sb-footer {
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid var(--border);
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.58rem;
   color: var(--text-muted);
   letter-spacing: 0.06em;
-  line-height: 1.8;
   transition: border-color 0.25s;
-}
-
-.sb-updated {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.sb-updated-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #28a745 !important;
-  flex-shrink: 0;
-  display: inline-block;
-}
-  flex-shrink: 0;
 }
 
 /* ===========================
    MAIN CONTENT
    =========================== */
 .main-content {
-  padding: 0 2.5rem 4rem 2.5rem;
+  padding: 2.5rem 2.5rem 4rem;
   max-width: 680px;
 }
 
-/* FADE-IN on scroll */
+/* section block */
 .block {
   padding: 0 0 2.5rem;
+  margin-bottom: 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 2.5rem;
-/* BLOCKS */
-.block {
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0;
   transition: border-color 0.25s;
 }
 
 .block:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .block-label {
@@ -399,7 +325,10 @@ a:hover {
 .block-body strong { font-weight: 500; color: var(--text); }
 
 /* article list */
-.article-list { display: flex; flex-direction: column; }
+.article-list {
+  display: flex;
+  flex-direction: column;
+}
 
 .article-item {
   display: flex;
@@ -427,7 +356,7 @@ a:hover {
   transition: transform 0.15s ease;
 }
 
-/* music link */
+/* music block */
 .music-link {
   display: inline-flex;
   align-items: center;
@@ -440,11 +369,11 @@ a:hover {
 .music-link:hover { color: var(--accent-hover); text-decoration: underline; }
 
 /* ===========================
-   CV PAGE
+   CV PAGE — FULL WIDTH
    =========================== */
 .cv-layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
   max-width: 1000px;
@@ -455,6 +384,37 @@ a:hover {
 .cv-main {
   padding: 2.5rem 2.5rem 4rem;
   max-width: 680px;
+}
+
+.cv-page-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+  line-height: 1.1;
+}
+
+.cv-page-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.cv-page-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 2;
+  margin-bottom: 0;
+}
+.cv-page-meta a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.cv-page-meta a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .cv-section {
@@ -479,7 +439,11 @@ a:hover {
   margin-bottom: 1.25rem;
 }
 
-.cv-list { display: flex; flex-direction: column; gap: 1.75rem; }
+.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
 
 .cv-item-meta {
   display: flex;
@@ -521,7 +485,10 @@ a:hover {
   margin-bottom: 0.6rem;
 }
 
-.cv-points { list-style: none; padding: 0; }
+.cv-points {
+  list-style: none;
+  padding: 0;
+}
 .cv-points li {
   font-size: 0.875rem;
   color: var(--text);
@@ -538,13 +505,19 @@ a:hover {
   font-size: 0.72rem;
 }
 
-.skill-rows { display: flex; flex-direction: column; gap: 0.6rem; }
+.skill-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
 .skill-row {
   display: flex;
   gap: 1rem;
   font-size: 0.875rem;
   line-height: 1.55;
 }
+
 .skill-cat {
   font-family: var(--font-mono);
   font-size: 0.65rem;
@@ -553,6 +526,7 @@ a:hover {
   padding-top: 0.1rem;
   flex-shrink: 0;
 }
+
 .skill-vals { color: var(--text); }
 
 .extra-body p {
@@ -567,10 +541,12 @@ a:hover {
    MOBILE
    =========================== */
 @media (max-width: 640px) {
-  .layout, .cv-layout {
+  .layout,
+  .cv-layout {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
   }
+
   .sidebar {
     position: static;
     height: auto;
@@ -579,9 +555,16 @@ a:hover {
     padding: 1.5rem 1.25rem;
     gap: 1.5rem;
   }
+
   .sb-footer { display: none; }
-  .main-content, .cv-main { padding: 1.75rem 1.25rem 3rem; }
+
+  .main-content,
+  .cv-main {
+    padding: 1.75rem 1.25rem 3rem;
+  }
+
   .top-bar { padding: 1.1rem 1.25rem; }
+
   .skill-row { flex-direction: column; gap: 0.15rem; }
   .skill-cat { min-width: unset; }
 }
