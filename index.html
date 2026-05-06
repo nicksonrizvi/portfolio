@@ -17,11 +17,9 @@
 </head>
 <body>
 
-<div class="layout">
+<div class="page">
 
-  <!-- ========================
-       TOP BAR
-       ======================== -->
+  <!-- TOP BAR -->
   <header class="top-bar">
     <span class="site-id">NAJMAZ.SAKIB</span>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -31,147 +29,128 @@
     </button>
   </header>
 
-  <!-- ========================
-       SIDEBAR
-       ======================== -->
-  <aside class="sidebar">
+  <!-- HERO -->
+  <section class="hero">
+    <img src="photo.jpg" alt="Najmaz Sakib" class="hero-photo" />
+    <h1 class="hero-name">Najmaz Sakib</h1>
+    <p class="hero-role">Senior Engineer, Service Assurance &nbsp;·&nbsp; Dhaka, Bangladesh</p>
 
-    <div>
-      <img src="photo.jpg" alt="Najmaz Sakib" class="sidebar-photo" />
-      <div class="sidebar-name">Najmaz Sakib</div>
-      <div class="sidebar-role">Senior Engineer<br/>Service Assurance</div>
-    </div>
+    <!-- Quick nav -->
+    <nav class="hero-nav">
+      <a href="cv.html" class="hero-nav-link">
+        CV <span class="nav-arrow">&#x2197;</span>
+      </a>
+      <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener" class="hero-nav-link">
+        LinkedIn <span class="nav-arrow">&#x2197;</span>
+      </a>
+      <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="hero-nav-link">
+        Music <span class="nav-arrow">&#x2197;</span>
+      </a>
+      <a href="https://medium.com/@najmaz.sakib" target="_blank" rel="noopener" class="hero-nav-link">
+        Writing <span class="nav-arrow">&#x2197;</span>
+      </a>
+    </nav>
 
-    <div class="sb-section">
-      <span class="sb-label">Location</span>
-      <span class="sb-val">Dhaka, Bangladesh</span>
-    </div>
-
-    <div class="sb-section">
-      <span class="sb-label">Currently</span>
-      <span class="sb-val">Infozillion Teletech BD Ltd</span>
-      <span class="sb-muted">Oct 2024 &ndash; Present</span>
-    </div>
-
-    <div class="sb-section">
-      <span class="sb-label">Contact</span>
-      <span class="sb-val">
-        <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>
-      </span>
-      <span class="sb-muted">+880 1833-020438</span>
-    </div>
-
-    <div class="sb-section">
-      <span class="sb-label">Skills</span>
-      <div class="tag-wrap">
-        <span class="tag">ELK Stack</span>
-        <span class="tag">Grafana</span>
-        <span class="tag">Nagios</span>
-        <span class="tag">Linux</span>
-        <span class="tag">Nginx</span>
-        <span class="tag">Bash</span>
-        <span class="tag">TCP/IP</span>
-        <span class="tag">A2P SMS</span>
-        <span class="tag">Sphinx</span>
+    <!-- Quick info -->
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hm-label">Currently</span>
+        <span class="hm-val">Infozillion Teletech BD Ltd</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hm-label">Contact</span>
+        <span class="hm-val">
+          <span class="copy-inline">
+            <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>
+            <button class="copy-btn" id="copyBtn" aria-label="Copy email">copy</button>
+          </span>
+        </span>
       </div>
     </div>
+  </section>
 
-    <div class="sb-section">
-      <span class="sb-label">Find me</span>
-      <div class="sb-nav">
-        <a href="cv.html" class="sb-nav-link">
-          <span class="sb-nav-title">CV</span>
-          <span class="sb-arrow">&#x2197;</span>
-        </a>
-        <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener" class="sb-nav-link">
-          <span class="sb-nav-title">LinkedIn</span>
-          <span class="sb-arrow">&#x2197;</span>
-        </a>
-        <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="sb-nav-link">
-          <span class="sb-nav-title">Music</span>
-          <span class="sb-arrow">&#x2197;</span>
-        </a>
-        <a href="https://medium.com/@najmaz.sakib" target="_blank" rel="noopener" class="sb-nav-link">
-          <span class="sb-nav-title">Writing</span>
-          <span class="sb-arrow">&#x2197;</span>
-        </a>
-      </div>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <span class="section-label">About</span>
+    <div class="section-body">
+      <p>I work in the space where things break at 3&nbsp;AM — service assurance, production systems, the kind of infrastructure that quietly keeps everything else running. My job is to notice what's wrong before anyone else does, understand why it happened, and make sure it doesn't happen the same way twice.</p>
+      <p>There's a particular kind of thinking that comes from staring at logs long enough — you start to see patterns in noise, causality in chaos. I've found that skill useful far beyond engineering.</p>
+      <p>Outside the terminal, I write songs. Not as a hobby — as a practice. Music and systems work share more than people expect: both require patience, precision, and an ear for what doesn't fit.</p>
+      <p>I also write essays, occasionally. About people, about how we learn things we never knew we learned, about the small behaviours that reveal larger truths.</p>
     </div>
+  </section>
 
-    <div class="sb-footer">
-      &copy; 2026 Najmaz Sakib
+  <!-- NOW -->
+  <section class="section" id="now">
+    <span class="section-label">Now</span>
+    <div class="section-body">
+      <p>Senior Engineer at <strong>Infozillion Teletech BD Ltd</strong>, working in Service Assurance for A2P SMS infrastructure. That means: monitoring, incident response, log analysis, coordination with telecom operators, and the quiet unglamorous work of keeping SLAs intact across a 24/7 production environment.</p>
+      <p>I'm also investing time in documentation — building internal runbooks and knowledge systems that outlast any single person on the team. I think of good documentation as institutional memory. Most teams treat it as an afterthought. I don't.</p>
     </div>
+  </section>
 
-  </aside>
-
-  <!-- ========================
-       MAIN CONTENT
-       ======================== -->
-  <main class="main-content">
-
-    <div class="block" id="about">
-      <span class="block-label">About</span>
-      <div class="block-body">
-        <p>Senior Engineer in Service Assurance with hands-on experience in 24/7 production support, incident management, and infrastructure monitoring. Currently at Infozillion Teletech BD Ltd, working across network, application, and system layers to maintain high availability and minimise downtime.</p>
-        <p>I specialise in log-driven diagnostics — ELK Stack, Grafana, Nagios — and take particular care in building runbooks and documentation that teams can rely on under pressure.</p>
-        <p>Beyond engineering, I am a singer-songwriter. I write and record original music, and occasionally put thoughts to paper — on people, habits, and the quieter parts of everyday life.</p>
-      </div>
+  <!-- MUSIC -->
+  <section class="section" id="music">
+    <span class="section-label">Music</span>
+    <div class="section-body">
+      <p>I write and record original songs under the name <strong>Nickson Rizvi</strong>. The work is honest — small observations stretched into melody, personal enough to mean something, open enough for others to find themselves in it.</p>
+      <p>I'm drawn to the gap between what people say and what they feel. Most of my songs live in that space.</p>
+      <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="music-link">
+        Listen on YouTube &#x2197;
+      </a>
     </div>
+  </section>
 
-    <div class="block" id="now">
-      <span class="block-label">Now</span>
-      <div class="block-body">
-        <p>Working as <strong>Senior Engineer &ndash; Service Assurance</strong> at Infozillion Teletech BD Ltd &mdash; monitoring A2P SMS infrastructure and ensuring high availability across production systems. Managing SLA-driven incident response and maintaining internal documentation.</p>
-      </div>
+  <!-- WRITING -->
+  <section class="section" id="writing">
+    <span class="section-label">Writing</span>
+    <div class="section-body">
+      <p>I write when something refuses to leave my head. Usually about people — the patterns we inherit without noticing, the social contracts we follow without signing, the gap between how things are and how they're supposed to be.</p>
+      <p>No agenda. Just thinking out loud, in public, with some care taken over the sentences.</p>
     </div>
-
-    <div class="block" id="music">
-      <span class="block-label">Music</span>
-      <div class="block-body">
-        <p>Singer-songwriter and musician. I write and record original songs — each one a small document of something felt or observed.</p>
-        <a href="https://www.youtube.com/@nickson.rizvimusic" target="_blank" rel="noopener" class="music-link">
-          Listen on YouTube &#x2197;
-        </a>
-      </div>
+    <div class="article-list">
+      <a href="https://medium.com/@najmaz.sakib/no-matter-what-you-do-its-never-enough-here-s-why-8a58c1f15477"
+         target="_blank" rel="noopener" class="article-item">
+        <div class="art-left">
+          <span class="art-title">No Matter What You Do, It's Never Enough</span>
+          <span class="art-desc">On the psychology of perpetual dissatisfaction &middot; Medium</span>
+        </div>
+        <span class="art-arrow">&#x2197;</span>
+      </a>
+      <a href="https://medium.com/@najmaz.sakib/basic-courtesies-that-people-learn-from-family-7678142e38cf"
+         target="_blank" rel="noopener" class="article-item">
+        <div class="art-left">
+          <span class="art-title">Basic Courtesies That People Learn From Family</span>
+          <span class="art-desc">On what's quietly passed down and quietly missed &middot; Medium</span>
+        </div>
+        <span class="art-arrow">&#x2197;</span>
+      </a>
     </div>
+  </section>
 
-    <div class="block" id="writing">
-      <span class="block-label">Writing</span>
-      <div class="block-body">
-        <p>Essays on people, behaviour, and the quieter parts of everyday life — published on Medium.</p>
-      </div>
-      <div class="article-list" style="margin-top: 0.75rem;">
-        <a href="https://medium.com/@najmaz.sakib/no-matter-what-you-do-its-never-enough-here-s-why-8a58c1f15477"
-           target="_blank" rel="noopener" class="article-item">
-          <div class="art-left">
-            <span class="art-title">No Matter What You Do, It's Never Enough</span>
-            <span class="art-desc">Medium &middot; 2024</span>
-          </div>
-          <span class="art-arrow">&#x2197;</span>
-        </a>
-        <a href="https://medium.com/@najmaz.sakib/basic-courtesies-that-people-learn-from-family-7678142e38cf"
-           target="_blank" rel="noopener" class="article-item">
-          <div class="art-left">
-            <span class="art-title">Basic Courtesies That People Learn From Family</span>
-            <span class="art-desc">Medium &middot; 2024</span>
-          </div>
-          <span class="art-arrow">&#x2197;</span>
-        </a>
-      </div>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <span class="section-label">Contact</span>
+    <div class="section-body">
+      <p>I'm reachable at <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>. I read everything, though I may take a day or two to respond thoughtfully.</p>
+      <p>If you'd prefer a more professional context, <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">LinkedIn</a> works too.</p>
     </div>
+  </section>
 
-    <div class="block" id="contact">
-      <span class="block-label">Contact</span>
-      <div class="block-body">
-        <p>Reach me at <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a> or connect on <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">LinkedIn</a>.</p>
-      </div>
-    </div>
-
-  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span class="footer-left">&copy; 2026 Najmaz Sakib</span>
+    <span class="footer-right">
+      <span class="updated-dot"></span>
+      Last updated May 2026
+    </span>
+  </footer>
 
 </div>
 
 <script>
+(() => {
+  /* THEME TOGGLE */
   const root   = document.documentElement;
   const toggle = document.getElementById('themeToggle');
   const label  = document.getElementById('themeLabel');
@@ -190,6 +169,23 @@
       label.textContent = 'Light';
     }
   });
+
+  /* COPY EMAIL */
+  const copyBtn = document.getElementById('copyBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('najmaz.sakib@gmail.com');
+        copyBtn.textContent = '✓';
+        copyBtn.classList.add('copied');
+        setTimeout(() => {
+          copyBtn.textContent = 'copy';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      } catch { copyBtn.textContent = 'copy'; }
+    });
+  }
+})();
 </script>
 
 </body>
