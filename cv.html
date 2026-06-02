@@ -25,17 +25,54 @@
     </button>
   </header>
 
-  <h1 class="cv-name">Najmaz Sakib</h1>
-  <p class="cv-role-line">System Support &amp; Service Assurance Engineer</p>
-  <p class="cv-meta-line">
-    <a href="tel:+8801833020438">+880 1833-020438</a>
-    &nbsp;&middot;&nbsp;
-    <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>
-    &nbsp;&middot;&nbsp;
-    <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">linkedin.com/in/najmaz-sakib</a>
-    &nbsp;&middot;&nbsp;
-    Dhaka, Bangladesh
-  </p>
+  <!-- CV HERO WITH PHOTO -->
+  <div class="cv-hero">
+    <div class="cv-hero-text">
+      <h1 class="cv-name">Najmaz Sakib</h1>
+      <p class="cv-role-line">System Support &amp; Service Assurance Engineer</p>
+      <p class="cv-meta-line">
+        <a href="tel:+8801833020438">+880 1833-020438</a>
+        &nbsp;&middot;&nbsp;
+        <a href="mailto:najmaz.sakib@gmail.com">najmaz.sakib@gmail.com</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://linkedin.com/in/najmaz-sakib/" target="_blank" rel="noopener">linkedin.com/in/najmaz-sakib</a>
+        &nbsp;&middot;&nbsp;
+        Dhaka, Bangladesh
+      </p>
+    </div>
+    <img src="photo.jpg" alt="Najmaz Sakib" class="cv-photo" />
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="cv-section">
+    <span class="cv-section-label">Professional Summary</span>
+    <div class="extra-body">
+      <p>Proactive System Support and Service Assurance Engineer with 1.5+ years of hands-on experience in 24/7 production support, incident management, and system monitoring. Adept at diagnosing complex issues across network, application, and infrastructure layers. Known for calm decision-making under pressure, thorough documentation, and building internal tooling to automate recurring reporting workflows.</p>
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="cv-section">
+    <span class="cv-section-label">Core Competencies</span>
+    <div class="skill-rows">
+      <div class="skill-row">
+        <span class="skill-cat">Support &amp; Monitoring</span>
+        <span class="skill-vals">Helpdesk ticket handling (SLA) &middot; Incident detection &amp; escalation &middot; Real-time monitoring &middot; Root-cause analysis</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Tools &amp; Platforms</span>
+        <span class="skill-vals">ELK Stack (Elasticsearch, Logstash, Kibana) &middot; Grafana &middot; Nagios &middot; Linux (Ubuntu) &middot; Bash scripting</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Networking</span>
+        <span class="skill-vals">TCP/IP &middot; HTTP/HTTPS troubleshooting &middot; DNS &middot; SSH &middot; Nginx &middot; A2P SMS routing &middot; VPN (basic)</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Documentation</span>
+        <span class="skill-vals">Sphinx &middot; GitHub &middot; ReadTheDocs &middot; HTML/CSS/JavaScript &middot; Cross-team collaboration</span>
+      </div>
+    </div>
+  </div>
 
   <!-- EXPERIENCE -->
   <div class="cv-section">
@@ -51,11 +88,12 @@
         <p class="cv-company">Infozillion Teletech BD Ltd</p>
         <ul class="cv-points">
           <li>Own L1/L2 incident management in a 24/7 production environment — from first alert to root cause, with structured escalation that keeps noise low and resolution fast.</li>
-          <li>Monitor system, application, and network health across the stack using ELK Stack, Grafana, and Nagios; built custom dashboards that surfaced failure patterns previously invisible to the team.</li>
-          <li>Lead investigation of A2P SMS delivery failures — correlating application logs, network traces, and telecom operator data to isolate root cause under time pressure.</li>
-          <li>Reduced mean incident response time by standardising log triage workflows; what took 40 minutes now takes under 15.</li>
-          <li>Authored and maintains the team's internal runbook library — structured so that a new engineer can handle critical incidents without tribal knowledge.</li>
-          <li>Coordinate directly with telecom operators during outages, translating technical findings into clear, actionable communication across teams.</li>
+          <li>Monitor system, application, and network health across the stack using ELK Stack, Grafana, and Nagios to ensure high availability.</li>
+          <li>Investigate A2P SMS delivery failures through in-depth log analysis and telecom operator coordination.</li>
+          <li>Troubleshoot HTTP errors (4xx/5xx) and API failures to minimise service disruption and downtime.</li>
+          <li>Reduced incident response time by implementing structured log analysis workflows and proactive alert tuning.</li>
+          <li>Built and maintain a suite of browser-based reporting tools used daily by the team — automating ELK CSV parsing, pivot table generation, and ready report output.</li>
+          <li>Designed and maintained a team-wide knowledge base (Sphinx/ReadTheDocs) covering client query handling, helpdesk response templates, email workflows, and MNO/IPTSP error code resolutions.</li>
         </ul>
       </div>
 
@@ -66,8 +104,8 @@
         <h3 class="cv-job-title">Project Delivery Assistant</h3>
         <p class="cv-company">Quantigo AI</p>
         <ul class="cv-points">
-          <li>Managed quality assurance across concurrent annotation projects for AI/ML training pipelines — maintaining accuracy standards that directly affected model performance downstream.</li>
-          <li>Identified systematic labelling inconsistencies and redesigned the validation workflow, reducing rework cycles across the team.</li>
+          <li>Ensured deliverables met quality standards and client specifications across multiple concurrent projects.</li>
+          <li>Managed annotation workflows and validated dataset accuracy for AI/ML model training pipelines.</li>
         </ul>
       </div>
 
@@ -78,7 +116,7 @@
         <h3 class="cv-job-title">Data Analyst</h3>
         <p class="cv-company">Intelligent Image Management Ltd</p>
         <ul class="cv-points">
-          <li>Processed and validated structured datasets to support operational reporting.</li>
+          <li>Processed and validated structured datasets to support operational reporting requirements.</li>
           <li>Identified data inconsistencies to improve downstream system reliability.</li>
         </ul>
       </div>
@@ -97,40 +135,55 @@
     </div>
   </div>
 
-  <!-- SKILLS -->
-  <div class="cv-section">
-    <span class="cv-section-label">Skills</span>
-    <div class="skill-rows">
-      <div class="skill-row">
-        <span class="skill-cat">Monitoring &amp; Support</span>
-        <span class="skill-vals">ELK Stack &middot; Grafana &middot; Nagios &middot; SLA Helpdesk &middot; Incident Management</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Infrastructure</span>
-        <span class="skill-vals">Linux (Ubuntu) &middot; Bash &middot; Nginx &middot; SSH &middot; TCP/IP &middot; DNS &middot; A2P SMS</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Documentation</span>
-        <span class="skill-vals">Sphinx &middot; GitHub &middot; ReadTheDocs &middot; Technical Writing</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Languages</span>
-        <span class="skill-vals">Bengali (Native) &middot; English (Full Working Proficiency)</span>
-      </div>
-    </div>
-  </div>
-
   <!-- PROJECTS -->
   <div class="cv-section">
     <span class="cv-section-label">Projects</span>
     <div class="cv-list">
+
       <div>
-        <h3 class="cv-job-title">Sphinx-based Internal Documentation System</h3>
+        <h3 class="cv-job-title">Service Assurance Toolset</h3>
+        <p class="cv-company">HTML &middot; CSS &middot; JavaScript &middot; GitHub Pages</p>
+        <div class="extra-body" style="margin-bottom:0.75rem;">
+          <p>Built and maintained a suite of browser-based internal tools used daily by the Service Assurance team, replacing manual reporting workflows. All tools deployed on GitHub Pages — data processed entirely in-browser, no external server dependency.</p>
+        </div>
         <ul class="cv-points">
-          <li>Designed and deployed an internal documentation platform using Sphinx for structured, searchable knowledge management.</li>
-          <li>Integrated GitHub and ReadTheDocs for version-controlled, centrally accessible team documentation.</li>
+          <li>
+            <strong>Daily Shift Report Tool</strong> — Parses ELK Discover CSV exports; auto-generates pivot tables for 9xxx/1xxx error codes, HTTP 4xx/5xx, and DLR status; produces ready reports with Google Drive backup.
+            <br /><span class="cv-project-links">
+              <a href="https://github.com/sakib-opsgrid/daily_report" target="_blank" rel="noopener">GitHub</a>
+              &nbsp;&middot;&nbsp;
+              <a href="https://sakib-opsgrid.github.io/daily_report" target="_blank" rel="noopener">Live</a>
+            </span>
+          </li>
+          <li>
+            <strong>Morning Shift Report</strong> — Aggregates ELK CSV exports and live Google Sheets data into a structured shift summary with auto-save and 30-report history.
+            <br /><span class="cv-project-links">
+              <a href="https://github.com/sakib-opsgrid/morning_shift_report" target="_blank" rel="noopener">GitHub</a>
+              &nbsp;&middot;&nbsp;
+              <a href="https://sakib-opsgrid.github.io/morning_shift_report" target="_blank" rel="noopener">Live</a>
+            </span>
+          </li>
+          <li>
+            <strong>MNP Disk Status Reporter</strong> — Converts raw Nagios output into a clean disk/memory/swap status report; auto-filters critical partitions (&le;20% free) and formats for team distribution.
+            <br /><span class="cv-project-links">
+              <a href="https://github.com/sakib-opsgrid/mnp_disk_status" target="_blank" rel="noopener">GitHub</a>
+              &nbsp;&middot;&nbsp;
+              <a href="https://sakib-opsgrid.github.io/mnp_disk_status" target="_blank" rel="noopener">Live</a>
+            </span>
+          </li>
         </ul>
       </div>
+
+      <div>
+        <h3 class="cv-job-title">Operational Knowledge Base</h3>
+        <p class="cv-company">Sphinx &middot; GitHub &middot; ReadTheDocs</p>
+        <ul class="cv-points">
+          <li>Designed and maintained a searchable internal documentation system — primary reference and onboarding resource for the Service Assurance team.</li>
+          <li>Covers client query handling, helpdesk response templates, email workflows, and MNO/IPTSP error code resolutions.</li>
+          <li>Integrated with GitHub and ReadTheDocs for version-controlled, centrally accessible team documentation.</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 
@@ -150,30 +203,72 @@
 
   <!-- CERTIFICATIONS -->
   <div class="cv-section">
-    <span class="cv-section-label">Certifications</span>
+    <span class="cv-section-label">Certifications &amp; Training</span>
     <div class="skill-rows">
       <div class="skill-row">
-        <span class="skill-cat">2023</span>
+        <span class="skill-cat">Sep 2023</span>
         <span class="skill-vals">Mapping Project Training</span>
       </div>
       <div class="skill-row">
-        <span class="skill-cat">2018</span>
+        <span class="skill-cat">Aug 2018</span>
         <span class="skill-vals">Java Workshop</span>
       </div>
       <div class="skill-row">
-        <span class="skill-cat">2017</span>
+        <span class="skill-cat">Nov 2017</span>
         <span class="skill-vals">C Programming Workshop</span>
       </div>
     </div>
   </div>
 
+  <!-- LANGUAGES -->
+  <div class="cv-section">
+    <span class="cv-section-label">Languages</span>
+    <div class="skill-rows">
+      <div class="skill-row">
+        <span class="skill-cat">Bengali</span>
+        <span class="skill-vals">Native</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">English</span>
+        <span class="skill-vals">Full Working Proficiency</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY STRENGTHS -->
+  <div class="cv-section">
+    <span class="cv-section-label">Key Strengths</span>
+    <ul class="cv-points">
+      <li>Strong troubleshooting mindset with structured root-cause analysis approach.</li>
+      <li>Calm and methodical under high-pressure production incidents.</li>
+      <li>Consistent documentation habits that reduce resolution time and improve team continuity.</li>
+      <li>Clear, professional communication with both technical and non-technical stakeholders.</li>
+      <li>Self-driven in building tools and systems that improve team efficiency without being asked.</li>
+    </ul>
+  </div>
+
   <!-- EXTRA -->
   <div class="cv-section">
-    <span class="cv-section-label">Extra</span>
+    <span class="cv-section-label">Extra-curricular</span>
     <div class="extra-body">
       <p>Member &mdash; DIU Computer Club.</p>
       <p>BNCC Cadet (2018) &mdash; Leadership &amp; discipline training.</p>
       <p>Volunteer &mdash; University tech fest event management.</p>
+    </div>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="cv-section">
+    <span class="cv-section-label">References</span>
+    <div class="skill-rows">
+      <div class="skill-row">
+        <span class="skill-cat" style="min-width:160px;">Md Asifur Rahman</span>
+        <span class="skill-vals">Chief Service Assurance Officer, Infozillion Teletech BD Ltd &nbsp;&middot;&nbsp; <a href="tel:+8801999097201">+880 1999-097201</a></span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat" style="min-width:160px;">Mohammad Monirul Islam</span>
+        <span class="skill-vals">Assistant Professor, CSE, Daffodil International University &nbsp;&middot;&nbsp; <a href="tel:+8801811481649">+880 1811-481649</a></span>
+      </div>
     </div>
   </div>
 

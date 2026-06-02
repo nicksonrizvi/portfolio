@@ -429,6 +429,36 @@ a:hover {
 /* ===========================
    CV PAGE
    =========================== */
+.cv-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.25s;
+}
+
+.cv-hero-text { flex: 1; }
+
+.cv-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 8%;
+  border: 2px solid var(--border);
+  filter: grayscale(10%);
+  flex-shrink: 0;
+  transition: border-color 0.25s;
+}
+
+.cv-project-links {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.cv-project-links a { color: var(--accent); }
+
 .cv-name {
   font-size: 1.5rem;
   font-weight: 600;
