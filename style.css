@@ -578,17 +578,22 @@ a:hover {
    RESPONSIVE — ALL SCREENS
    =========================== */
 
-/* Large desktop — 1200px+ */
-@media (min-width: 1200px) {
-  :root { --max: 680px; }
+/* MacBook Pro 16" — 1728px, MacBook Pro 14" — 1512px */
+@media (min-width: 1440px) {
+  :root { --max: 700px; --pad: 2rem; }
 }
 
-/* Desktop — 769px to 1199px */
+/* MacBook Air 13" — 1280px, MacBook Pro 13" — 1440px */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  :root { --max: 660px; --pad: 2rem; }
+}
+
+/* Desktop / large laptop — 769px to 1199px */
 @media (min-width: 769px) and (max-width: 1199px) {
   :root { --max: 620px; --pad: 2rem; }
 }
 
-/* Tablet — 481px to 768px */
+/* iPad Pro 12.9" — 1024px, iPad Air/Mini — 820px/768px */
 @media (min-width: 481px) and (max-width: 768px) {
   :root { --max: 100%; --pad: 1.75rem; }
 
@@ -608,32 +613,21 @@ a:hover {
   .hero-nav-link:nth-child(4) { border-right: none; border-bottom: none; }
 
   .hero-meta { gap: 1.25rem; }
-
   .section { padding: 2rem 0; }
-
   .skill-row { gap: 0.75rem; }
   .skill-cat { min-width: 110px; }
-
   .cv-hero { padding: 2rem 0 1.75rem; }
-
   .site-footer { padding: 1.25rem 0 2rem; }
 }
 
-/* Mobile — up to 480px */
-@media (max-width: 480px) {
-  :root { --max: 100%; --pad: 1.1rem; }
+/* iPhone 14 Pro Max — 430px, iPhone 14 Plus — 428px */
+@media (max-width: 430px) {
+  :root { --max: 100%; --pad: 1.2rem; }
 
-  /* top bar */
   .top-bar { padding: 1.1rem 0; }
-  .site-id { font-size: 0.6rem; }
-
-  /* hero */
   .hero { padding: 2rem 0 1.75rem; }
-  .hero-photo { width: 60px; height: 60px; }
-  .hero-name { font-size: 1.2rem; }
-  .hero-role { font-size: 0.82rem; }
-
-  /* hero nav — stack vertically */
+  .hero-name { font-size: 1.25rem; }
+  .hero-role { font-size: 0.83rem; }
   .hero-nav { flex-direction: column; border-radius: 4px; }
   .hero-nav-link {
     border-right: none;
@@ -642,57 +636,39 @@ a:hover {
     font-size: 0.82rem;
   }
   .hero-nav-link:last-child { border-bottom: none; }
-
-  /* hero meta — stack */
   .hero-meta { flex-direction: column; gap: 0.6rem; margin-top: 0.9rem; }
-
-  /* copy button */
-  .copy-inline { gap: 0.3rem; }
-
-  /* sections */
   .section { padding: 1.75rem 0; }
-  .section-label { font-size: 0.58rem; margin-bottom: 0.85rem; }
+  .section-label { font-size: 0.58rem; }
   .section-body p { font-size: 0.9rem; line-height: 1.75; }
-
-  /* find list */
   .find-item { padding: 0.7rem 0.85rem; }
   .find-title { font-size: 0.85rem; }
   .find-desc { font-size: 0.75rem; }
-
-  /* article list */
   .art-title { font-size: 0.85rem; }
   .art-desc { font-size: 0.75rem; }
-
-  /* skills */
   .skill-row { flex-direction: column; gap: 0.15rem; }
   .skill-cat { min-width: unset; font-size: 0.6rem; }
-  .skill-vals { font-size: 0.82rem; }
-
-  /* cv page */
-  .cv-hero { padding: 1.75rem 0 1.5rem; gap: 1rem; }
-  .cv-photo { width: 68px; height: 68px; }
+  .cv-hero { padding: 1.75rem 0 1.5rem; }
   .cv-name { font-size: 1.2rem; }
   .cv-role-line { font-size: 0.82rem; }
   .cv-meta-line { font-size: 0.75rem; line-height: 1.9; }
   .cv-section { padding: 1.6rem 0; }
-  .cv-section-label { font-size: 0.58rem; }
   .cv-job-title { font-size: 0.9rem; }
   .cv-points li { font-size: 0.82rem; }
   .cv-item-meta { flex-wrap: wrap; gap: 0.4rem; }
-
-  /* footer */
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.3rem;
-    padding: 1.25rem 0 2rem;
-  }
+  .site-footer { flex-direction: column; align-items: flex-start; gap: 0.3rem; padding: 1.25rem 0 2rem; }
 }
 
-/* Very small screens — 320px */
-@media (max-width: 360px) {
-  :root { --pad: 0.9rem; }
-  .hero-name { font-size: 1.1rem; }
+/* iPhone 14 / 13 / 12 — 390px, iPhone SE — 375px */
+@media (max-width: 390px) {
+  :root { --pad: 1rem; }
+  .hero-name { font-size: 1.15rem; }
   .section-body p { font-size: 0.875rem; }
+  .cv-meta-line { font-size: 0.72rem; }
+}
+
+/* iPhone SE 1st gen — 320px */
+@media (max-width: 320px) {
+  :root { --pad: 0.85rem; }
+  .hero-name { font-size: 1.05rem; }
 }
 
