@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap');
 
 /* ===========================
-   LIGHT MODE — warm minimal
+   LIGHT MODE — warm, smooth, low-contrast
    =========================== */
 :root {
-  --bg:           #f9f7f4;
-  --text:         #18181b;
-  --text-muted:   #6b6b6b;
-  --border:       #e2ddd6;
+  --bg:           #faf9f6;
+  --text:         #2b2a27;
+  --text-muted:   #807d77;
+  --border:       #e8e4dc;
   --surface:      #ffffff;
-  --surface-2:    #f0ece4;
-  --accent:       #2d6a9f;
-  --accent-hover: #1e4f7a;
-  --tag-bg:       #eae6de;
-  --tag-text:     #4a4a4a;
+  --surface-2:    #f1ede5;
+  --accent:       #b35c3a;
+  --accent-hover: #9a4c2e;
+  --tag-bg:       #eeeae1;
+  --tag-text:     #5c584f;
   --font:         'DM Sans', system-ui, sans-serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
   --font-serif:   'Instrument Serif', Georgia, serif;
@@ -26,19 +26,19 @@
 }
 
 /* ===========================
-   DARK MODE — Claude.ai palette
+   DARK MODE — Claude.ai, soft & warm
    =========================== */
 [data-theme="dark"] {
-  --bg:           #1a1a1a;  /* Claude dark background */
-  --text:         #ececec;  /* Claude primary text */
-  --text-muted:   #9b9b9b;  /* Claude secondary text */
-  --border:       #333333;  /* Claude divider */
-  --surface:      #262624;  /* Claude card/surface — warm dark */
-  --surface-2:    #2f2f2d;  /* Claude hover surface */
-  --accent:       #c15f3c;  /* Claude terracotta orange */
-  --accent-hover: #d4714b;
-  --tag-bg:       #2f2f2d;
-  --tag-text:     #9b9b9b;
+  --bg:           #262624;  /* Claude main dark — warm charcoal, not black */
+  --text:         #e8e6e0;  /* warm off-white, not stark white */
+  --text-muted:   #9a968d;
+  --border:       #3a3935;
+  --surface:      #30302c;  /* slightly lifted surface */
+  --surface-2:    #3a3935;
+  --accent:       #d4825f;  /* softer terracotta */
+  --accent-hover: #e0997a;
+  --tag-bg:       #3a3935;
+  --tag-text:     #9a968d;
   color-scheme:   dark;
 }
 
