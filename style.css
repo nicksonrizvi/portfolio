@@ -1,10 +1,10 @@
 /* ===========================
-   FONTS
+   FONTS — DM Sans / DM Mono / Instrument Serif
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap');
 
 /* ===========================
-   LIGHT MODE
+   LIGHT MODE — warm minimal
    =========================== */
 :root {
   --bg:           #f9f7f4;
@@ -17,8 +17,9 @@
   --accent-hover: #1e4f7a;
   --tag-bg:       #eae6de;
   --tag-text:     #4a4a4a;
-  --font:         'Inter', system-ui, sans-serif;
-  --font-mono:    'Courier New', Courier, monospace;
+  --font:         'DM Sans', system-ui, sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+  --font-serif:   'Instrument Serif', Georgia, serif;
   --max:          620px;
   --pad:          2rem;
   color-scheme:   light;
@@ -162,12 +163,13 @@ a:hover {
 }
 
 .hero-name {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 400;
   color: var(--text);
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
 }
 
 .hero-role {
@@ -460,11 +462,13 @@ a:hover {
 .cv-project-links a { color: var(--accent); }
 
 .cv-name {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 400;
   color: var(--text);
-  letter-spacing: -0.02em;
-  margin-bottom: 0.2rem;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin-bottom: 0.3rem;
   margin-top: 2.5rem;
 }
 
@@ -548,7 +552,8 @@ a:hover {
 }
 
 .cv-company {
-  font-size: 0.83rem;
+  font-family: var(--font-serif);
+  font-size: 1rem;
   color: var(--text-muted);
   font-style: italic;
   margin-bottom: 0.6rem;
@@ -610,7 +615,7 @@ a:hover {
   :root { --max: 100%; --pad: 1.75rem; }
 
   .hero { padding: 2.25rem 0 2rem; }
-  .hero-name { font-size: 1.35rem; }
+  .hero-name { font-size: 2.1rem; }
 
   .hero-nav {
     display: grid;
@@ -638,7 +643,7 @@ a:hover {
 
   .top-bar { padding: 1.1rem 0; }
   .hero { padding: 2rem 0 1.75rem; }
-  .hero-name { font-size: 1.25rem; }
+  .hero-name { font-size: 1.9rem; }
   .hero-role { font-size: 0.83rem; }
   .hero-nav { flex-direction: column; border-radius: 4px; }
   .hero-nav-link {
@@ -660,7 +665,7 @@ a:hover {
   .skill-row { flex-direction: column; gap: 0.15rem; }
   .skill-cat { min-width: unset; font-size: 0.6rem; }
   .cv-hero { padding: 1.75rem 0 1.5rem; }
-  .cv-name { font-size: 1.2rem; }
+  .cv-name { font-size: 1.8rem; }
   .cv-role-line { font-size: 0.82rem; }
   .cv-meta-line { font-size: 0.75rem; line-height: 1.9; }
   .cv-section { padding: 1.6rem 0; }
@@ -673,7 +678,7 @@ a:hover {
 /* iPhone 14 / 13 / 12 — 390px, iPhone SE — 375px */
 @media (max-width: 390px) {
   :root { --pad: 1rem; }
-  .hero-name { font-size: 1.15rem; }
+  .hero-name { font-size: 1.75rem; }
   .section-body p { font-size: 0.875rem; }
   .cv-meta-line { font-size: 0.72rem; }
 }
@@ -681,6 +686,6 @@ a:hover {
 /* iPhone SE 1st gen — 320px */
 @media (max-width: 320px) {
   :root { --pad: 0.85rem; }
-  .hero-name { font-size: 1.05rem; }
+  .hero-name { font-size: 1.6rem; }
 }
 
