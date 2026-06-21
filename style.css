@@ -516,15 +516,27 @@ a:hover {
   letter-spacing: 0.05em;
 }
 
-.cv-badge {
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
+.cv-date.is-current {
   color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 0.08rem 0.4rem;
-  border-radius: 3px;
-  letter-spacing: 0.08em;
-  opacity: 0.85;
+}
+
+.cv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+}
+
+.cv-badge::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
 }
 
 .cv-job-title {
